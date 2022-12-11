@@ -61,6 +61,8 @@ function RegistrationForm() {
             const updates = {};
             updates['/' + newPostKey] = obj
             return update(ref(database), updates);
+        } else {
+            alert("Fee payment failed!");
         }
     }
 
